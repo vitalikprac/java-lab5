@@ -13,9 +13,9 @@ public class RationalExpression extends Polynomial{
     /**
      * Створює новий об'єкт з заданими значеннями
      *
-     * @Param numeratorCoefficients - масив коефіцієнтів в чисельнику
-     * @Param denominatorCoefficients - масив коефіцієнтів в знаменнику
-     * @See RationalExpression
+     * @param numeratorCoefficients - масив коефіцієнтів в чисельнику
+     * @param denominatorCoefficients - масив коефіцієнтів в знаменнику
+     * @see RationalExpression
      **/
     public RationalExpression(float[] numeratorCoefficients, float[] denominatorCoefficients) {
         super(numeratorCoefficients);

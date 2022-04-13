@@ -10,8 +10,8 @@ public class Square {
     /**
      * Створює новий об'єкт з заданим значенням
      *
-     * @Param author - сторона
-     * @See Square
+     * @param side - сторона
+     * @see Square
      **/
     public Square(float side) throws Exception {
         if (side <= 0) {
@@ -23,7 +23,7 @@ public class Square {
     /**
      * Встановлення сторони квадрату
      *
-     * @Param side - нове значення сторони квадрату
+     * @param side - нове значення сторони квадрату
      **/
     public void setSide(float side) throws Exception {
         if (side <= 0) {
@@ -35,7 +35,7 @@ public class Square {
     /**
      * Підрахунок площи квадрату
      *
-     * @Return float - площа квадрату
+     * @return float - площа квадрату
      **/
     public float calculateArea() {
         return side * side;
@@ -45,7 +45,7 @@ public class Square {
     /**
      * Підрахунок периметру квадрату
      *
-     * @Return float - периметр квадрату
+     * @return float - периметр квадрату
      **/
     public float calculatePerimeter() {
         return 4 * side;

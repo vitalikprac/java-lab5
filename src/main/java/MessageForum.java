@@ -26,11 +26,11 @@ public class MessageForum {
     /**
      * Створює новий об'єкт з заданими значеннями
      *
-     * @Param author - виробник
-     * @Param topic - тема
-     * @Param text - текс
-     * @Param createdAt - дата та час створення
-     * @See MessageForum
+     * @param author - виробник
+     * @param topic - тема
+     * @param text - текс
+     * @param createdAt - дата та час створення
+     * @see MessageForum
      **/
     public MessageForum(String author, String topic, String text, LocalDateTime createdAt) {
         this.author = author;
@@ -44,8 +44,8 @@ public class MessageForum {
     /**
      * Редагування тексту
      *
-     * @Param text - нове повідомлення
-     * @Param createdAt - дата та час редагування
+     * @param newMessage - нове повідомлення
+     * @param editedAt - дата та час редагування
      **/
     public void editText(String newMessage, LocalDateTime editedAt) {
         this.text = newMessage;

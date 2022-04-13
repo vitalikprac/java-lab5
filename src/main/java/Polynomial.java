@@ -9,8 +9,8 @@ public class Polynomial {
     /**
      * Створює новий об'єкт з заданими значеннями
      *
-     * @Param coefficients - масив коефіцієнтів
-     * @See Polynomial
+     * @param coefficients - масив коефіцієнтів
+     * @see Polynomial
      **/
     public Polynomial(float[] coefficients) {
         this.coefficients = coefficients;

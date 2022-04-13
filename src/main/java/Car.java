@@ -17,10 +17,10 @@ public class Car {
     /**
      * Створює новий об'єкт з заданими значеннями
      *
-     * @Param brand - марка
-     * @Param cylindesCount - кількість циліндрів
-     * @Param power - потужність
-     * @See Car
+     * @param brand - марка
+     * @param cylindersCount - кількість циліндрів
+     * @param power - потужність
+     * @see Car
      **/
     public Car(String brand, int cylindersCount, int power) {
         this.brand = brand;

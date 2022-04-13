@@ -9,11 +9,11 @@ public class Truck extends Car{
     /**
      * Створює новий об'єкт з заданими значеннями
      *
-     * @Param brand - марка
-     * @Param cylindesCount - кількість циліндрів
-     * @Param power - потужність
-     * @Param loadCapacity - вантажопідйомність
-     * @See Truck
+     * @param brand - марка
+     * @param cylindersCount - кількість циліндрів
+     * @param power - потужність
+     * @param loadCapacity - вантажопідйомність
+     * @see Truck
      **/
     public Truck(String brand, int cylindersCount, int power, int loadCapacity) {
         super(brand, cylindersCount, power);
