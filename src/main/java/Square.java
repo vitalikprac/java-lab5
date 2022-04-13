@@ -11,7 +11,7 @@ public class Square {
      * Створює новий об'єкт з заданим значенням
      *
      * @Param author - сторона
-     * @See MessageForum
+     * @See Square
      **/
     public Square(float side) throws Exception {
         if (side <= 0) {

@@ -27,9 +27,21 @@ public class Task25Test {
 
 
     @Test
-    public void testWorks() {
-        var actual = 1;
-        Assert.assertEquals(1, actual);
+    public void createAndPrintPolynomial(){
+        var polynomial = new Polynomial(new float[]{1,2,3});
+        System.out.println(polynomial);
+        Assert.assertEquals("""
+                Polynomial{coefficients=[1.0, 2.0, 3.0]}\r
+                """, outContent.toString());
+    }
+
+    @Test
+    public void createAndPrintRationalPolynomial(){
+        var rationalExpression = new RationalExpression(new float[]{1,2,3},new float[]{3,4,5});
+        System.out.println(rationalExpression);
+        Assert.assertEquals("""
+                RationalExpression{numerator=[1.0, 2.0, 3.0], denominator=[3.0, 4.0, 5.0]}\r
+                """, outContent.toString());
     }
 
 
