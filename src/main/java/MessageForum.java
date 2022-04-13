@@ -2,12 +2,36 @@ import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class MessageForum {
+    /**
+     * Властивість - автор
+     **/
     private final String author;
+    /**
+     * Властивість - тема
+     **/
     private final String topic;
+    /**
+     * Властивість - текст
+     **/
     protected String text;
+    /**
+     * Властивість - час та дата створення
+     **/
     private final LocalDateTime createdAt;
+    /**
+     * Властивість - час та дата редагування
+     **/
     private LocalDateTime editedAt;
 
+    /**
+     * Створює новий об'єкт з заданими значеннями
+     *
+     * @Param author - виробник
+     * @Param topic - тема
+     * @Param text - текс
+     * @Param createdAt - дата та час створення
+     * @See MessageForum
+     **/
     public MessageForum(String author, String topic, String text, LocalDateTime createdAt) {
         this.author = author;
         this.topic = topic;
@@ -16,6 +40,13 @@ public class MessageForum {
         this.editedAt = createdAt;
     }
 
+
+    /**
+     * Редагування тексту
+     *
+     * @Param text - нове повідомлення
+     * @Param createdAt - дата та час редагування
+     **/
     public void editText(String newMessage, LocalDateTime editedAt) {
         this.text = newMessage;
         this.editedAt = editedAt;
