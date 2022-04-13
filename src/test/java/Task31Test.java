@@ -27,10 +27,21 @@ public class Task31Test {
 
 
     @Test
-    public void testWorks() {
-        var actual = 1;
-        Assert.assertEquals(1, actual);
+    public void createAndPrintCar(){
+        var car = new Car("Test brand",5,200);
+        System.out.println(car);
+        Assert.assertEquals("""
+                Car{brand='Test brand', cylindersCount=5, power=200}\r
+                """, outContent.toString());
     }
 
+    @Test
+    public void createAndPrintTruck(){
+        var truck = new Truck("Test brand",5,200,999);
+        System.out.println(truck);
+        Assert.assertEquals("""
+                Truck{loadCapacity=999}\r
+                """, outContent.toString());
+    }
 
 }
